@@ -12,8 +12,9 @@ Label(root, text="Please Enter Amount in Your Account", font=60, foreground="#00
 Label(root, text="R", font=60, foreground="#000000", bg="#fcbf49").place(x=100, y=80)
 
 amount_ent = Entry(root, text="R", width=25, textvariable=amount)
-
+amount_ent.focus()
 amount_ent.place(x=120, y=80)
+
 
 def clear():
     amount_ent.delete(0, END)
@@ -28,7 +29,6 @@ def check():
         if int(amount_ent.get()) < 3000:
            messagebox.showinfo("Save More!", "Please deposit more funds for this excursion")
            root.destroy()
-           import task
 
     except ValueError:
         if amount_ent.get() != int:
@@ -37,9 +37,6 @@ def check():
         if int(amount_ent.get()) >= 3000:
             messagebox.showinfo("Congratulations!!!", "You qualify for the Malaysia trip")
             root.destroy()
-            import task
-
-
 
 
 check_btn = Button(root, cursor="hand2", text="Check Qualification", foreground="#e5e5e5", borderwidth="5", bg="#14213d", command=check)

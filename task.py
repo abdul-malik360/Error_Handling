@@ -23,8 +23,8 @@ password_ent.place(x=150, y=180)
 
 
 def access():
-    user_names = ["Abdul-Malik"]
-    passwords = ["0000"]
+    user_names = ["Abdul-Malik", "Godwin", "Thapelo", "Uthmaan", "Jason"]
+    passwords = ["0000", "1234", "5678", "8765", "4321"]
 
     n = len(user_names)
     p = len(passwords)

@@ -53,14 +53,14 @@ def close_program():
     root.destroy()
 
 
-login = Button(root, text="Login", font=10, foreground="#1d3557", width=20, borderwidth="5", command=access, bg="#a8dadc")
+login = Button(root, cursor="hand2", text="Login", font=10, foreground="#1d3557", width=20, borderwidth="5", command=access, bg="#a8dadc")
 login.place(x=135, y=230)
 
 
-clear_btn = Button(root, text="Clear", font=10, foreground="#1d3557",borderwidth="5", command=clear, bg="#a8dadc")
+clear_btn = Button(root, cursor="hand2", text="Clear", font=10, foreground="#1d3557",borderwidth="5", command=clear, bg="#a8dadc")
 clear_btn.place(x=140, y=320)
 
-close = Button(root, text="Close", font=10, foreground="#e63946", borderwidth="5", command=close_program, bg="#a8dadc")
+close = Button(root, cursor="hand2", text="Close", font=10, foreground="#e63946", borderwidth="5", command=close_program, bg="#a8dadc")
 close.place(x=290, y=320)
 
 
